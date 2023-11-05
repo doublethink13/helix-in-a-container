@@ -1,0 +1,13 @@
+theme = "onedark"
+
+[editor]
+true-color = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+
+[editor.soft-wrap]
+enable = true

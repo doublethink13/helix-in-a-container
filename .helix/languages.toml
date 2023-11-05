@@ -1,0 +1,44 @@
+[[language]]
+auto-format = true
+name = "go"
+
+[[language]]
+auto-format = true
+language-servers = ["pylsp"]
+name = "python"
+scope = "source.python"
+
+[language-server.pylsp.config.plugins]
+autopep8 = { enabled = false }
+black = { enabled = true }
+flake8 = { enabled = true }
+mccabe = { enabled = false }
+mypy = { enabled = true, live_mode = true, strict = true }
+pycodestyle = { enabled = false }
+pydocstyle = { enabled = false }
+pyflakes = { enabled = false }
+pylint = { enabled = false }
+pyls_isort = { enabled = true }
+rope_autoimport = { enabled = true }
+yapf = { enabled = false }
+
+[[language]]
+auto-format = true
+file-types = ["Dockerfile"]
+name = "dockerfile"
+
+
+[[language]]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "markdown"] }
+name = "markdown"
+
+[[language]]
+auto-format = true
+formatter = { command = "taplo", args = ["fmt", "-"] }
+name = "toml"
+
+[[language]]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+name = "yaml"
